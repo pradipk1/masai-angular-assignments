@@ -1,0 +1,38 @@
+
+<!-- String Interpolatio -->
+
+<h1>{{pageTitle}}</h1> 
+
+<h2>{{a+b}}</h2>
+
+<h3>{{sum+10}}</h3>
+
+
+<!-- Property Binding -->
+
+<img [src]="imageUrl" alt="mans">
+<br><br><br>
+
+<!-- Event Binding -->
+<button (click)="toggleChange()">submit</button>
+<br><br><br>
+
+
+<!-- Event Binding -->
+
+<button (click)="handleButtonClick()">Click Me</button>
+<br><br><br>
+
+
+
+<!-- Two way Binding -->
+
+<input type="text" placeholder="username" (keydown)="onChange($event)" [(ngModel)]="username">
+<br><br>
+<div>{{username}}</div>
+<br><br>
+
+
+<!-- Condionally styling -->
+
+<p [style.color]="isError ? 'red' : 'green'">The color is given condionally.</p>
